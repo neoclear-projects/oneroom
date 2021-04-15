@@ -29,3 +29,7 @@
 ## API Standard
 
 + **GraphQL:** for API requests
+
+## Testing
+
++ **Cypress:** for frontend testing
