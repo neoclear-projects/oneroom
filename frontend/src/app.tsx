@@ -1,8 +1,19 @@
-import React from 'react';
+import Button from "./components/button";
+import './app.scss';
+import Input from "./components/input";
 
 function App() {
   return (
-    <div>App</div>
+    // <div className='test'>
+    //   <Button
+    //     text='Click'
+    //     onClick={() => console.log('clicked')}
+    //     gridArea='a'
+    //   />
+    <Input
+      placeholder='enter'
+      onChange={text => console.log(text)}
+    />
   );
 }
 

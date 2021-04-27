@@ -1,0 +1,20 @@
+@import '../../styles/index';
+
+.room-button {
+  @include Loose-Layout;
+  @include Primary-Font;
+
+  user-select: none;
+
+  color: $Foreground-Color;
+  background-color: $Background-Color;
+
+  &:hover {
+    background-color: $Shadow-Color;
+  }
+
+  &:active {
+    background-color: $Foreground-Color;
+    color: $Background-Color;
+  }
+}

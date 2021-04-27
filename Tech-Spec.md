@@ -33,3 +33,8 @@
 ## Testing
 
 + **Cypress:** for frontend testing
+
+## Frontend Language
+
++ **Typescript:** Typescript is a requirement to make frontend development more secured
+

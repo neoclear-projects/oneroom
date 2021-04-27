@@ -1,0 +1,14 @@
+$Primary-Font: Arial, Helvetica, sans-serif;
+$Secondary-Font: Roboto;
+
+$default-font-size: 18px;
+
+@mixin Primary-Font($ft-size: $default-font-size) {
+  font-family: $Primary-Font;
+  font-size: $ft-size;
+}
+
+@mixin Secondary-Font($ft-size: $default-font-size) {
+  font-family: $Secondary-Font;
+  font-size: $ft-size;
+}
