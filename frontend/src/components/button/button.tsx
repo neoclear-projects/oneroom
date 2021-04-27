@@ -1,5 +1,11 @@
 import './button.scss';
 
+/**
+ * Customized button for one room
+ * 
+ * @param param Attributes required by button component
+ * @returns Button component
+ */
 export default function Button({
   text,
   onClick,

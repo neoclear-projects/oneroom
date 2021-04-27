@@ -6,10 +6,16 @@ import Input from '../input';
 import PageCenter from '../page-center';
 import './login.scss';
 
+/**
+ * Login component
+ * 
+ * @returns Login component
+ */
 export default function Login() {
   const history = useHistory();
 
   return (
+    // Use a page center wrapper to contain a component in the center of the page
     <PageCenter
       child={
         <div id='login'>

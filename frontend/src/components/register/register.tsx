@@ -6,12 +6,19 @@ import Input from '../input';
 import PageCenter from '../page-center';
 import './register.scss';
 
+/**
+ * Register component
+ * 
+ * @returns Register component
+ */
 export default function Register() {
   const history = useHistory();
 
   return (
+    // Used page center to center register component
     <PageCenter
       child={
+        // The register component
         <div id='register'>
           <Header
             text='Register'

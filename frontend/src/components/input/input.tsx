@@ -24,6 +24,12 @@ type InputType
   | "url"
   | "week";
 
+/**
+ * Customized input for one room
+ * 
+ * @param param Attributes required by input component
+ * @returns Input component
+ */
 export default function Input({
   placeholder = '',
   onChange,

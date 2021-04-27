@@ -12,6 +12,12 @@ type HeaderAlign
   | 'center'
   | 'right';
 
+  /**
+ * Customized header for one room
+ * 
+ * @param param Attributes required by header component
+ * @returns Header component
+ */
 export default function Header({
   text,
   size = 'medium',
