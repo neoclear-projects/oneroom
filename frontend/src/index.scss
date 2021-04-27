@@ -1,14 +1,17 @@
 @import './styles';
 
+// Give some default settings for all elements
 * {
   font-family: $Primary-Font;
 
+  // Make selection black and white
   &::selection {
     background-color: $Foreground-Color;
     color: $Background-Color;
   }
 }
 
+// No margin for body element
 body {
   margin: 0px;
 }

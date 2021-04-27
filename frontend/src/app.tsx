@@ -1,21 +1,16 @@
-import Button from "./components/button";
-import './app.scss';
-import Input from "./components/input";
-import Login from "./components/login";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes";
 
+/**
+ * React element for the entire application
+ * 
+ * @returns React element for the entire app
+ */
 function App() {
   return (
-    // // <div className='test'>
-    // //   <Button
-    // //     text='Click'
-    // //     onClick={() => console.log('clicked')}
-    // //     gridArea='a'
-    // //   />
-    // <Input
-    //   placeholder='enter'
-    //   onChange={text => console.log(text)}
-    // />
-    <Login />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 

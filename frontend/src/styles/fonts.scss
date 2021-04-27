@@ -1,13 +1,16 @@
+// Font definitions
 $Primary-Font: Arial, Helvetica, sans-serif;
 $Secondary-Font: Roboto;
 
 $default-font-size: 18px;
 
+// Mixin for primary font with given size
 @mixin Primary-Font($ft-size: $default-font-size) {
   font-family: $Primary-Font;
   font-size: $ft-size;
 }
 
+// Mixin for secondary font with given size
 @mixin Secondary-Font($ft-size: $default-font-size) {
   font-family: $Secondary-Font;
   font-size: $ft-size;

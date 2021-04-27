@@ -1,14 +1,17 @@
+// Border definition for layouts.scss internal use
 @mixin border() {
   border-radius: 12px;
   border: 3px black solid;
 }
 
+// Loose layout
 @mixin Loose-Layout() {
   padding: 0.6rem 1rem;
 
   @include border();
 }
 
+// Compact layout
 @mixin Compact-Layout() {
   padding: 0.4rem 0.7rem;
 
