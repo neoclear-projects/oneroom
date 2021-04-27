@@ -1,0 +1,15 @@
+#login {
+  display: grid;
+  grid-template-columns: 3fr 20px 2fr;
+  grid-template-rows: auto 30px auto 12px auto 18px auto;
+  grid-template-areas:
+    "header header header"
+    ". . ."
+    "username username username"
+    ". . ."
+    "password password password"
+    ". . ."
+    "login . register";
+  
+  width: 480px;
+}

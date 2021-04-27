@@ -18,3 +18,22 @@
     color: $Background-Color;
   }
 }
+
+.room-button-inverted {
+  @include Loose-Layout;
+  @include Primary-Font;
+
+  user-select: none;
+
+  color: $Background-Color;
+  background-color: $Foreground-Color;
+
+  &:hover {
+    background-color: $BlackShadow-Color;
+  }
+
+  &:active {
+    background-color: $Background-Color;
+    color: $Foreground-Color;
+  }
+}

@@ -1,3 +1,14 @@
+@import './styles';
+
+* {
+  font-family: $Primary-Font;
+
+  &::selection {
+    background-color: $Foreground-Color;
+    color: $Background-Color;
+  }
+}
+
 body {
   margin: 0px;
 }
