@@ -1,0 +1,14 @@
+#home {
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows: min-content auto;
+  grid-template-columns: 100vw;
+  grid-template-areas:
+    "navigation"
+    "body";
+}
+
+#room-content {
+  grid-area: body;
+}

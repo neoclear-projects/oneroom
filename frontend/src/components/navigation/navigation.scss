@@ -6,7 +6,11 @@
   flex-direction: row;
   justify-content: center;
 
+  height: min-content;
+
   border-bottom: 3px black solid;
+
+  grid-area: navigation;
 }
 
 #navigation-wrapper {

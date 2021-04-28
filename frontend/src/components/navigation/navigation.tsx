@@ -2,8 +2,12 @@ import { useState } from 'react';
 import NavigateItem from './navigate-item';
 import './navigation.scss';
 
-export default function Navigation() {
-  const [tab, setTab] = useState('Rooms');
+export default function Navigation({
+  path
+}: {
+  path: string
+}) {
+  const [tab, setTab] = useState(path);
 
   return (
     <div
@@ -15,20 +19,20 @@ export default function Navigation() {
         <NavigateItem
           name='Rooms'
           link='/'
-          focused={tab === 'Rooms'}
-          onClick={() => setTab('Rooms')}
+          focused={tab === '/'}
+          onClick={() => setTab('/')}
         />
         <NavigateItem
           name='Manage'
           link='/manage'
-          focused={tab === 'Manage'}
-          onClick={() => setTab('Manage')}
+          focused={tab === '/manage'}
+          onClick={() => setTab('/manage')}
         />
         <NavigateItem
           name='Invitations'
           link='/invitations'
-          focused={tab === 'Invitations'}
-          onClick={() => setTab('Invitations')}
+          focused={tab === '/invitations'}
+          onClick={() => setTab('/invitations')}
         />
       </div>
     </div>

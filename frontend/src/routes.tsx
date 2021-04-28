@@ -7,6 +7,8 @@ import Register from './components/register';
 export const HOME_URL = '/';
 export const LOGIN_URL = '/login';
 export const REGISTER_URL = '/register';
+export const MANAGE_URL = '/manage';
+export const INVITATION_URL = '/invitations';
 
 /**
  * Routing definitions for the entire application
@@ -19,6 +21,8 @@ export default function Routes() {
       <Route exact path={LOGIN_URL} component={Login} />
       <Route exact path={REGISTER_URL} component={Register} />
       <Route exact path={HOME_URL} component={Home} />
+      <Route exact path={MANAGE_URL} component={Home} />
+      <Route exact path={INVITATION_URL} component={Home} />
     </Switch>
   );
 }
