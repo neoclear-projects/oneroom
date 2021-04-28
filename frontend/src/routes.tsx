@@ -1,8 +1,10 @@
 import { Switch, Route } from 'react-router-dom';
+import Home from './components/home';
 import Login from './components/login';
 import Register from './components/register';
 
 // URL definitions
+export const HOME_URL = '/';
 export const LOGIN_URL = '/login';
 export const REGISTER_URL = '/register';
 
@@ -16,6 +18,7 @@ export default function Routes() {
     <Switch>
       <Route exact path={LOGIN_URL} component={Login} />
       <Route exact path={REGISTER_URL} component={Register} />
+      <Route exact path={HOME_URL} component={Home} />
     </Switch>
   );
 }

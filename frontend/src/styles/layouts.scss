@@ -1,6 +1,8 @@
+$Border-Radius: 12px;
+
 // Border definition for layouts.scss internal use
 @mixin border() {
-  border-radius: 12px;
+  border-radius: $Border-Radius;
   border: 3px black solid;
 }
 

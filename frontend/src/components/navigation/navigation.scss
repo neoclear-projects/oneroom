@@ -1,0 +1,57 @@
+@import '../../styles/index';
+
+#navigation {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border-bottom: 3px black solid;
+}
+
+#navigation-wrapper {
+  width: fit-content;
+
+  display: grid;
+
+  grid-template-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-areas: "Rooms . Manage . Invitations";
+}
+
+@mixin nav-item {
+  @include Secondary-Font(25px);
+
+  text-align: center;
+
+  user-select: none;
+  padding: 0.6rem 3.6rem;
+
+  border-radius: $Border-Radius;
+
+  margin: 4px 0px;
+
+  text-decoration: none;
+}
+
+.navigate-item {
+  @include nav-item();
+
+  color: $Foreground-Color;
+  background-color: $Background-Color;
+
+  &:hover {
+    background-color: $Shadow-Color;
+  }
+
+  &:active {
+    color: $Background-Color;
+    background-color: $Foreground-Color;
+  }
+}
+
+.navigate-item-focused {
+  @include nav-item();
+
+  color: $Background-Color;
+  background-color: $Foreground-Color;
+}
