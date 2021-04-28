@@ -1,12 +1,7 @@
 import { BrowserRouter, Route, useRouteMatch } from "react-router-dom";
 import Navigation from "../navigation";
+import Room from "../room";
 import './home.scss';
-
-function A() {
-  return (
-    <div>A</div>
-  );
-}
 
 function B() {
   return (
@@ -27,7 +22,7 @@ export default function Home() {
       <div id='home'>
         <Navigation path={match.path} />
         <div id='room-content'>
-          <Route exact path="/" component={A}/>
+          <Route exact path="/" component={Room}/>
           <Route exact path="/manage" component={B}/>
           <Route exact path="/invitations" component={C}/>
         </div>

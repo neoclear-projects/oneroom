@@ -1,7 +1,7 @@
 $Border-Radius: 12px;
 
 // Border definition for layouts.scss internal use
-@mixin border() {
+@mixin Border() {
   border-radius: $Border-Radius;
   border: 3px black solid;
 }
@@ -10,12 +10,12 @@ $Border-Radius: 12px;
 @mixin Loose-Layout() {
   padding: 0.6rem 1rem;
 
-  @include border();
+  @include Border();
 }
 
 // Compact layout
 @mixin Compact-Layout() {
   padding: 0.4rem 0.7rem;
 
-  @include border();
+  @include Border();
 }
