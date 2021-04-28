@@ -19,3 +19,14 @@ $Border-Radius: 12px;
 
   @include Border();
 }
+
+$Body-Radius: 12px;
+
+@mixin Absolute-Attach() {
+  position: absolute;
+
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}

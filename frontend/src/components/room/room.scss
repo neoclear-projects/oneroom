@@ -1,9 +1,0 @@
-#room-room {
-  display: grid;
-
-  grid-template-rows: auto;
-  grid-template-columns: 320px max-content;
-  grid-template-areas: "room-list room-content";
-
-  height: 100%;
-}

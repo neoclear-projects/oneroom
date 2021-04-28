@@ -1,10 +1,13 @@
 @import '../../styles/index';
 
+// Style of room list (Should use absolute)
 .room-list {
-  grid-area: room-list;
-  height: 100%;
+  @include Absolute-Attach();
 
-  // border-right: 3px $Foreground-Color solid;
+  padding: 8px;
 
-  
+  display: flex;
+  flex-direction: column;
+
+  @include Vertical-Slider();
 }

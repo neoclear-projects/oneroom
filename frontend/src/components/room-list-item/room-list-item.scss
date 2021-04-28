@@ -1,0 +1,38 @@
+@import '../../styles/index';
+
+// Room item style
+.room-list-item {
+  border-radius: $Border-Radius;
+
+  padding: 18px 12px;
+
+  user-select: none;
+
+  display: grid;
+
+  grid-template-rows: auto 20px auto;
+  grid-template-columns: calc(100% - 40px) 40px;
+  grid-template-areas:
+    "room-list-item-header room-list-item-header"
+    ". ."
+    "room-list-item-active room-list-item-owner";
+
+  &:hover {
+    background-color: $Shadow-Color;
+  }
+
+  &:active {
+    background-color: $Foreground-Color;
+    color: $Background-Color;
+  }
+}
+
+// Room item active style
+.room-list-item-active {
+  grid-area: room-list-item-active;
+}
+
+// Room item owner style
+.room-list-item-owner {
+  grid-area: room-list-item-owner;
+}

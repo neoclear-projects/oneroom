@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router-dom';
 import './navigation.scss';
 
+// Navigation component
 export default function NavigateItem({
   name,
   link,
