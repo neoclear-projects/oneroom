@@ -1,0 +1,9 @@
+@mixin Vertical-Slider() {
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+}

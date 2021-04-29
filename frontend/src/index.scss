@@ -15,3 +15,24 @@
 body {
   margin: 0px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // background: $Background-Color;
+  background-color: $Shadow-Color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $BlackShadow-Color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $Foreground-Color; 
+}

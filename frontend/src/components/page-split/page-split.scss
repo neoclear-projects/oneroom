@@ -1,0 +1,33 @@
+@import '../../styles/index';
+
+#page-split {
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-template-columns: 320px auto;
+  grid-template-areas: "page-left page-right";
+
+  height: 100%;
+
+  width: 100vw;
+}
+
+// Style of page left
+#page-left {
+  grid-area: page-left;
+
+  margin: 0;
+  border-right: 3px $Foreground-Color solid;
+
+  position: relative;
+}
+
+// Style of page right
+#page-right {
+  grid-area: page-right;
+
+  margin: 0;
+
+  position: relative;
+  width: 100%;
+}

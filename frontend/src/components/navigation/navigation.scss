@@ -13,6 +13,7 @@
   grid-area: navigation;
 }
 
+// Navigation wrapper, the component in the center of the navigation
 #navigation-wrapper {
   width: fit-content;
 
@@ -22,6 +23,7 @@
   grid-template-areas: "Rooms . Manage . Invitations";
 }
 
+// Common property of navigation item
 @mixin nav-item {
   @include Secondary-Font(25px);
 
@@ -37,6 +39,7 @@
   text-decoration: none;
 }
 
+// Navigation item not focused
 .navigate-item {
   @include nav-item();
 
@@ -53,6 +56,7 @@
   }
 }
 
+// Focused navigation item
 .navigate-item-focused {
   @include nav-item();
 
