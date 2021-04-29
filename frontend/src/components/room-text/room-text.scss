@@ -1,0 +1,9 @@
+@import '../../styles';
+
+#room-text {
+  grid-area: room-text;
+
+  @include Body-Border();
+
+  margin: 8px;
+}

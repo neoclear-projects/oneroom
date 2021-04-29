@@ -4,10 +4,12 @@
   display: grid;
 
   grid-template-rows: auto;
-  grid-template-columns: 320px max-content;
+  grid-template-columns: 320px auto;
   grid-template-areas: "page-left page-right";
 
   height: 100%;
+
+  width: 100vw;
 }
 
 // Style of page left
@@ -26,7 +28,6 @@
 
   margin: 0;
 
-  height: 100%;
-
   position: relative;
+  width: 100%;
 }

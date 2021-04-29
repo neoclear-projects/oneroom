@@ -11,3 +11,11 @@
 
   @include Vertical-Slider();
 }
+
+.room-list-btn {
+  display: flex;
+  flex-direction: column;
+
+  position: sticky;
+  top: 0px;
+}

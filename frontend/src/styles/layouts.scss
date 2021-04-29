@@ -20,7 +20,12 @@ $Border-Radius: 12px;
   @include Border();
 }
 
-$Body-Radius: 12px;
+$Body-Radius: 24px;
+
+@mixin Body-Border($width: 3px) {
+  border-radius: $Body-Radius;
+  border: $width black solid;
+}
 
 @mixin Absolute-Attach() {
   position: absolute;
