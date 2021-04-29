@@ -1,11 +1,12 @@
+import PageSplit from '../page-split';
+import RoomBody from '../room-body';
 import RoomList from '../room-list';
-import './room.scss';
 
 export default function Room() {
   return (
-    <div id='room-room'>
-      <RoomList />
-      <div style={{ gridArea: 'room-content' }}>Content</div>
-    </div>
+    <PageSplit
+      leftChild={<RoomList />}
+      rightChild={<RoomBody />}
+    />
   );
 };

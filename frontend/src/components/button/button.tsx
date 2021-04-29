@@ -10,16 +10,25 @@ export default function Button({
   text,
   onClick,
   gridArea = undefined,
-  inverted = false
+  inverted = false,
+  shadowed = false
 }: {
   text: string
   onClick: () => void,
   gridArea?: string | undefined,
-  inverted?: boolean
+  inverted?: boolean,
+  shadowed?: boolean
 }) {
+
+  // Prepare classname for different styles
+  let className = inverted ? 'room-button-inverted' : 'room-button';
+  if (shadowed) {
+    className += ' room-button-shadow';
+  }
+
   return (
     <button
-      className={inverted ? 'room-button-inverted' : 'room-button'}
+      className={className}
       onClick={onClick}
       style={{ gridArea: gridArea }}
     >

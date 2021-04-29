@@ -43,3 +43,8 @@
     color: $Foreground-Color;
   }
 }
+
+// Shadow style for button
+.room-button-shadow {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 32px 0 rgba(0, 0, 0, 0.19);
+}

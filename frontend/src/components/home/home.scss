@@ -1,6 +1,12 @@
+// Style for home, the complete screen
 #home {
   display: grid;
   height: 100vh;
+  max-height: 100vh;
+
+  margin: 0px;
+
+  overflow: overlay;
 
   grid-template-rows: min-content auto;
   grid-template-columns: 100vw;
@@ -9,6 +15,7 @@
     "body";
 }
 
+// Room content style, needs to take the rest of the screen
 #room-content {
   grid-area: body;
 }
