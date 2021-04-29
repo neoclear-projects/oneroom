@@ -1,2 +1,4 @@
-package tiafs.oneroom.service;public class UserService {
+package tiafs.oneroom.service;
+
+public class UserService {
 }

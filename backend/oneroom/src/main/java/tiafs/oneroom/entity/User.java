@@ -1,2 +1,7 @@
-package tiafs.oneroom.entity;public class User {
+package tiafs.oneroom.entity;
+
+public class User {
+
+    private String username;
+
 }

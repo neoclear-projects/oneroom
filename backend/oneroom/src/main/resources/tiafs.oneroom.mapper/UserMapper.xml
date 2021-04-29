@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace= "tiafs.oneroom.mapper.UserMapper" >
+
+    <select id="existTable" resultType="Boolean">
+        SELECT COUNT(*) > 0
+        FROM information_schema.TABLES
+        WHERE table_name = ${table}
+    </select>
+
+    <update id="createUsersTable">
+        create table users (
+        userid TEXT NOT NULL,
+        salt TEXT NOT NULL,
+        hash TEXT NOT NULL,
+        PRIMARY KEY (userid))
+    </update>
+
+</mapper>
