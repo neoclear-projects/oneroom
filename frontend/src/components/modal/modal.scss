@@ -1,0 +1,65 @@
+@import '../../styles';
+
+.room-modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-hide {
+  display: none;
+}
+
+@mixin Modal-Content() {
+  @include Body-Border();
+
+  background-color: $Background-Color;
+  margin: auto;
+  padding: 20px;
+}
+
+.modal-content-tiny {
+  @include Modal-Content();
+  width: max(30%, 400px);
+}
+
+.modal-content-thin {
+  @include Modal-Content();
+  width: max(40%, 600px);
+}
+
+.modal-content-medium {
+  @include Modal-Content();
+  width: max(60%, 900px);
+}
+
+.modal-content-wide {
+  @include Modal-Content();
+  width: max(80%, 1200px);
+}
+
+.close {
+  user-select: none;
+  color: $Shadow-Color;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+
+  &:hover, :focus {
+    color: $Foreground-Color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

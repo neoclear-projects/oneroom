@@ -1,0 +1,47 @@
+@import '../../styles';
+
+@mixin chat-entry-common-prop() {
+  @include Loose-Padding();
+
+  display: grid;
+
+  grid-template-rows: auto;
+
+  &:hover {
+    background-color: $Shadow-Color;
+  }
+}
+
+.chat-entry {
+  @include chat-entry-common-prop();
+
+  grid-template-columns: min-content 12px 60% auto;
+  grid-template-areas: "avatar . message .";
+}
+
+.chat-entry-me {
+  @include chat-entry-common-prop();
+
+  grid-template-columns: auto 60% 12px min-content;
+  grid-template-areas: ". message . avatar";
+}
+
+@mixin message-wrap-common-prop {
+  grid-area: message;
+
+  align-self: start;
+
+  width: fit-content;
+}
+
+.message-wrap {
+  @include message-wrap-common-prop();
+
+  justify-self: start;
+}
+
+.message-wrap-me {
+  @include message-wrap-common-prop();
+
+  justify-self: end;
+}

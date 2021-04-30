@@ -1,0 +1,31 @@
+@import '../../styles';
+
+.scroll-notification {
+  position: absolute;
+  bottom: 0px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+  background-color: $Foreground-Color;
+  color: $Background-Color;
+  font-size: 14px;
+  padding: 4px 0px;
+  font-family: 'Varela Round', sans-serif;
+  border-top-left-radius: $Border-Radius;
+  border-top-right-radius: $Border-Radius;
+
+  transition: 0.1s;
+
+  &:hover {
+    background-color: $BlackShadow-Color;
+  }
+
+  &:active {
+    padding-bottom: 6px;
+  }
+}
+
+.scroll-notification-hide {
+  display: none;
+}

@@ -1,0 +1,19 @@
+@import '../../styles';
+
+.chat-history-wrapper {
+  position: relative;
+
+  grid-area: chat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.chat-history {
+  @include Absolute-Attach();
+
+  width: 100%;
+  
+  @include Vertical-Slider();
+}

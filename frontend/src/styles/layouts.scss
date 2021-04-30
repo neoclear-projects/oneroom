@@ -6,9 +6,13 @@ $Border-Radius: 12px;
   border: 3px black solid;
 }
 
+@mixin Loose-Padding() {
+  padding: 0.6rem 1rem;
+}
+
 // Loose layout
 @mixin Loose-Layout() {
-  padding: 0.6rem 1rem;
+  @include Loose-Padding();
 
   @include Border();
 }

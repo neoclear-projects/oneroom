@@ -1,0 +1,27 @@
+@import '../../styles';
+
+@mixin label-common-prop() {
+  @include Loose-Layout;
+  @include Primary-Font;
+
+  color: $Foreground-Color;
+  background-color: $Background-Color;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+// Define label styles
+.room-label {
+  @include label-common-prop();
+
+  border-color: $Background-Color;
+  border-left: 0;
+  border-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.room-label-bordered {
+  @include label-common-prop();
+}

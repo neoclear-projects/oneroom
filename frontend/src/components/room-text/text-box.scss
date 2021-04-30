@@ -1,0 +1,29 @@
+@import '../../styles';
+
+#room-text-box {
+  grid-area: text;
+
+  outline: none;
+  border: none;
+  border-radius: $Body-Radius;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+
+  @include Loose-Padding();
+
+  border-top: 3px $Foreground-Color solid;
+
+  resize: none;
+}
+
+#text-area {
+  outline: none;
+  border: none;
+
+  @include Secondary-Font();
+
+  resize: none;
+
+  height: 100%;
+  width: 100%;
+}

@@ -6,4 +6,13 @@
   @include Body-Border();
 
   margin: 8px;
+
+  display: grid;
+
+  grid-template-rows: 40px auto 160px;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "head"
+    "chat"
+    "text";
 }
